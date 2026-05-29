@@ -71,3 +71,4 @@ public class MyClass {
 The program successfully calls the static method to print “I am static” and the non-static method to print “I am non-static”.
 
 
+
