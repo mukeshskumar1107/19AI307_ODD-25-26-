@@ -1,68 +1,65 @@
 # Ex.No:1(D) ARRAYS
 
 ## QUESTION:
-
-Write a Java program to find the maximum odd number in an array.
-
-
+Write a Java program to find the index of a given element in an array.
 
 ## AIM:
-To write a program to find the maximum odd number in an array.
-
+To write a Java program that finds the index position of a specified element from a given array.
 
 ## ALGORITHM :
-```
-1.Start the program.
-2.Import the necessary package 'java.util'
-3.Read n elements and store them in the array.
-4.Initialize a variable maxOdd with the smallest possible integer value and set found = false.
-5.Traverse each element in the array:
-6.If the element is odd (arr[i] % 2 != 0)
-7.If no odd number was found yet or the current element is greater than maxOdd, update maxOdd.
-8.Set found = true.If true then print maxOddElse then print "No odd number found"
-```
-
-
-
+1.	Start the program.
+2.	Import the necessary package 'java.util'
+3.	Read the size of the array from the user.
+4. Create an array of the given size.
+5. Read the array elements from the user and store them in the array.
+6. Read the element to be searched.
+7. Traverse the array and compare each element with the search element.
+8. If matched, print the index position and terminate.
+9. If not found, display "Element not found".
+10. Stop the program.
 
 ## PROGRAM:
  ```
 /*
 Program to implement a Array concept using Java
 Developed by: MUKESH KUMAR S
-RegisterNumber:  212223240099
+RegisterNumber: 212223240099
 */
 ```
 
+## SOURCE CODE:
 ```
 import java.util.*;
-public class Main{
-    public static void main(String[] args){
+public class Main
+{
+    public static void main(String args[])
+    {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         int[] arr=new int[n];
-        
-        for(int i=0;i<n;i++){
+        for(int i=0;i<n;i++)
+        {
             arr[i]=sc.nextInt();
         }
-        int maxOdd=Integer.MIN_VALUE;
-        boolean found=false;
-        
-        for(int i=0;i<n;i++){
-            if(arr[i] % 2 != 0){
-                if(!found || arr[i] >maxOdd){
-                    maxOdd=arr[i];
-                }
-                found=true;
+        int key=sc.nextInt();
+        int index=-1;
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]==key)
+            {
+                index=i;
+                break;
             }
         }
-        if(found){
-            System.out.println(maxOdd);
+        
+        if(index!=-1)
+        {
+            
+            System.out.println(index);
         }
         else{
-            System.out.println("No odd number found");
+            System.out.println("Element not found");
         }
-        
     }
 }
 ```
@@ -72,11 +69,16 @@ public class Main{
 
 
 
+
 ## OUTPUT:
-
-<img width="606" height="608" alt="image" src="https://github.com/user-attachments/assets/d06d40d1-bca8-4558-92ef-4c36f42dbe80" />
-
+![OUTPUT](https://github.com/ABINAYA-27-76/19AI307_ODD-25-26-/blob/89cca4a56df2cfb4774052b6ca0e2fe103f4875f/19AI307_JAVA(25-26)/Module-01/DAY-4/output.jpg)
 
 ## RESULT:
 
-Thus, the program to find the maximum odd number in an array is executed successfully.
+Thus, the Java program to find the index of a given element in an array was successfully executed.
+
+
+
+
+
+
