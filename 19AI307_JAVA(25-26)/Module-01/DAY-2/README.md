@@ -1,98 +1,86 @@
 # Ex.No:1(B) CONDITIONAL STATEMENT
 
 ## QUESTION:
-A train company charges tickets based on age and travel class:
+In a haunted house, lights turn on or off based on the hour of entry:
 
-Children (<12): ₹5 per km (any class)
+If the hour is even and between 2 and 6 (inclusive), lights flicker.
 
-Adults (12–60):
+If the hour is odd and between 7 and 11, lights stay off.
 
-Sleeper: ₹10/km
+If the hour is 12, lights turn red.
 
-AC: ₹15/km
-
-Seniors (>60): ₹7/km (any class)
-
-Task: Accept age, distance and travel class (1 for Sleeper, 2 for AC)(follow the same order to get the inputs). Calculate fare.
-
-For example:
-
-Input	
-5
-100
-Result
-500
-
+Otherwise, the house is dark.
 
 
 ## AIM:
-
-To write a program that accepts the age, distance, and travel class (1 for Sleeper, 2 for AC) and calculates the train fare based on age-wise and class-wise fare rules.
+To write a Java program that uses conditional statements to determine the state of lights in a haunted house based on the hour of entry.
 
 ## ALGORITHM :
-```
-1.Start and read the inputs: age, distance, and travel class.
-2.Determine the rate per km based on age and class conditions.
-3.If age < 12, set rate = 5;
-   else if age 12–60, set rate = 10 for Sleeper or 15 for AC;
-   else if age > 60, set rate = 7.
-4.Calculate the fare using: fare = distance × rate.
-5.Display the total fare and Stop.
-```
+1. Start the program.
 
+2. Import the necessary package java.util.*.
 
+3. Create a Scanner object to read the hour input from the user.
 
+4. Read the hour as an integer.
+
+5. Check if the hour is even and between 2 and 6 (inclusive):
+
+6. Display “Lights flicker”.
+
+7. Else if the hour is odd and between 7 and 11:
+
+8. Display “Lights stay off”.
+
+9. Else if the hour is 12:
+
+10. Display “Lights turn red”.
+ 
+11. Display “The house is dark”.
+
+12. End the program.
 
 ## PROGRAM:
  ```
 /*
 Program to implement a conditional statement using Java
 Developed by: MUKESH KUMAR S
-RegisterNumber:  212223240099
+RegisterNumber: 212223240099
 */
 ```
 
+## Sourcecode.java:
 ```
-import java.util.Scanner;
-
-public class TrainFare {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int age = sc.nextInt();
-        int distance = sc.nextInt();
-
-        int farePerKm=0;;
-
-        if (age < 12) {
-            farePerKm = 5;
-        } else if (age > 60) {
-            farePerKm = 7;
-        } else { 
-            int travelClass = sc.nextInt();
-            if (travelClass == 1) {
-                farePerKm = 10;
-            } else if (travelClass == 2) {
-                farePerKm = 15;
-            } else {
-                System.out.println("Invalid class");
-                return;
-            }
+import java.util.*;
+public class Demo
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+       if (a >= 2 && a <= 6 && a % 2 == 0) {
+            System.out.println("Lights flicker");
+        } else if (a>= 7 && a <= 11 && a % 2 != 0) {
+            System.out.println("Lights off");
+        } else if (a == 12) {
+            System.out.println("Lights red");
+        } else {
+            System.out.println("Dark house");
         }
-
-        int totalFare = farePerKm * distance;
-        System.out.println(totalFare);
     }
 }
 ```
 
-
 ## OUTPUT:
+<img width="486" height="294" alt="Screenshot 2025-11-14 101547" src="https://github.com/user-attachments/assets/a64529b4-061c-436d-8ea4-55157b6e41b9" />
 
-<img width="652" height="356" alt="image" src="https://github.com/user-attachments/assets/492431f7-c261-4417-aecd-114541a862fd" />
+
+
 
 
 ## RESULT:
+Thus, the Java program to implement conditional statements for the haunted house lighting system was successfully executed.
 
-Thus, a java program to calculates the train fare based on age-wise and class-wise fare rules is executed successfully.
+
+
 
