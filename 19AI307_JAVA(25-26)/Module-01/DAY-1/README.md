@@ -1,73 +1,66 @@
 # Ex.No:1(A) INTRODUCTION TO JAVA PROGRAMMING, DATA TYPES, VARIABLES AND OPERATORS
 
 ## QUESTION:
+Lovely has just started learning Java and is very excited about how to display messages on the screen. Her first mission is to understand how different types of print statements work:
 
-A shop keeper would like to welcome their customers with their name.
+System.out.print() → prints on the same line
 
-Write a java program to get name from the user (String) and print it.
+System.out.println() → prints and moves to the next line
 
-Input Format:
-
-A single line string input.
-
-Output Format:
-
-Hello, [name]
-
-For example:
-
-Input	: Ajeesh 
-Result : Hello, Ajeesh
+System.out.printf() → prints formatted output
 
 
 ## AIM:
-
-Write a java program to get name from the user (String) and print it.
-
+To write a Java program that demonstrates the use of variables, data types, operators, and different print statements (print, println, and printf).
 
 ## ALGORITHM :
-```
-1.Start the program.
-2.Import the necessary package 'java.util'
-3.Create a Scanner object to read input from the user.
-4.Read a string input (the user's name).
-5.Store the input in the variable name.
-6.Display the message: "Hello, " + name
-```
-
-
+1.	Start the program.
+2.	Import the required package java.util.* (optional).
+3.	Declare variables of different data types (int, float, char, String).
+4.	Perform simple arithmetic operations using operators.
+5.	Use System.out.print() to display output on the same line.
+6.	Use System.out.println() to display output on the next line.
+7.	Use System.out.printf() to print formatted output.
+8.	End the program.
 
 ## PROGRAM:
  ```
 /*
 Program to implement variables and Operators using Java
 Developed by: MUKESH KUMAR S
-RegisterNumber:  212223240099
+RegisterNumber: 212223240099
 */
 ```
 
+## Sourcecode.java:
 ```
 import java.util.*;
-public class prog{
-    public static void main(String[] args){
-        Scanner sc= new Scanner(System.in);
-        String name = sc.next();
-        
-        System.out.print("Hello, "+name);
+public class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        String name=sc.next();
+        int age=sc.nextInt();
+        double num=sc.nextDouble();
+        System.out.println("Hello, "+name);
+        System.out.println("You are "+age+" years old");
+        System.out.printf("Your favorite number is %.2f ",num);
     }
 }
 ```
 
 
 
-## OUTPUT:
 
-<img width="669" height="242" alt="Screenshot 2025-11-19 104928" src="https://github.com/user-attachments/assets/fec616b3-c127-4715-a786-c3fc853b67b2" />
+
+## OUTPUT:
+<img width="766" height="385" alt="Screenshot 2025-11-14 105812" src="https://github.com/user-attachments/assets/8ca3a2e4-e913-4c3f-a8bf-73827075ab57" />
 
 
 ## RESULT:
+Thus, the Java program demonstrating variables, data types, operators, and print statements was successfully executed.
 
-Thus, the java program to get name from the user (String) and print it is executed successfully.
 
 
 
