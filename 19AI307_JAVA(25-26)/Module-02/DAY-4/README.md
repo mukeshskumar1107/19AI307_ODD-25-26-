@@ -71,3 +71,4 @@ class prog {
 The program successfully shows that a static variable can be accessed directly via the class name and also through an object, producing the same value.
 
 
+
