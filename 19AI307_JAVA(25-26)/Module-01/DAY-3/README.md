@@ -1,32 +1,24 @@
 # Ex.No:1(C) LOOPING STATEMENT
 
 ## QUESTION:
-Sum of Prime Numbers up to N
-
-For example:
-Input	
-10
-Result
-Sum of primes: 17
-
-
-
+Construct a right-angled triangle star pattern using for loop.
 ## AIM:
-To write a program to Sum of Prime Numbers up to N
-
+To write a Java program using looping statements to print a right-angled triangle star pattern based on user input.
 
 ## ALGORITHM :
-```
-1.Start the program.
-2.Import the necessary package 'java.util'
-3.Initialize sum = 0 to store the total of all prime numbers.
-4.If n ≤ 1, return false.
-5.If any divisor is found, return false; otherwise, return true.
-6.If isPrime(i) is true, add i to sum.
-7.After the loop ends, print the sum of all prime numbers up to n.
-```
+1.	Start the program.
 
+2.	Import the necessary package 'java.util'
 
+3. Read the number of rows from the user.
+
+4. Use an outer loop to iterate through each row.
+
+5. Use an inner loop to print stars (*) for each row.
+
+6. Move to the next line after printing stars for each row.
+
+7. End the program.
 
 
 ## PROGRAM:
@@ -34,44 +26,45 @@ To write a program to Sum of Prime Numbers up to N
 /*
 Program to implement a Looping Statement using Java
 Developed by: MUKESH KUMAR S
-RegisterNumber:  212223240099
+RegisterNumber: 212223240099
 */
 ```
 
+## SOURCE CODE:
+
 ```
-import java.util.Scanner;
-public class SumOfPrimes {
-    public static boolean isPrime(int n) {
-        if (n <= 1) return false;
-        for (int i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i == 0) return false;
-        }
-        return true;
-    }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int n = sc.nextInt();
-        int sum = 0;
-        for (int i = 2; i <= n; i++) {
-            if (isPrime(i)) {
-                sum += i;
+import java.util.*;
+public class TrianglePattern
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for (int i = 1; i <= n; i++) 
+        {         
+            for (int j = 1; j <= i; j++) 
+            {      
+                System.out.print("* ");
             }
+            System.out.println();              
         }
-        System.out.println("Sum of primes: " + sum);
-        sc.close();
     }
 }
 ```
 
-## OUTPUT:
 
-<img width="665" height="321" alt="image" src="https://github.com/user-attachments/assets/d3771899-1833-4b8a-a2d8-84d3159f7492" />
+
+
+## OUTPUT:
+<img width="399" height="395" alt="image" src="https://github.com/user-attachments/assets/07286d0c-5174-4702-8d58-34b630bd23d6" />
+
 
 
 ## RESULT:
+Thus, the Java program using looping statements to print a right-angled triangle star pattern was successfully written, executed, and verified.
 
- Thus, the program to print Sum of Prime Numbers up to N is executed successfully.
+
+
+
 
 
