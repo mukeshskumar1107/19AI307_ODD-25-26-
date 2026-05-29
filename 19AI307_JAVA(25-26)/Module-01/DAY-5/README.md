@@ -2,61 +2,64 @@
 
 ## QUESTION:
 
-Write a java program to find the index of the last occurrence of a character in a string.
+Write a Java program to calculate the power of a given number.
+
 
 ## AIM:
-
-To write a java program to find the index of the last occurrence of a character in a string.
-
+To write a Java program to compute the power of a number using the Math.pow() function in Java.
 
 ## ALGORITHM :
-```
-1.Start the program.
-2.Import the necessary package 'java.util'
-3.Start and read the input string from the user.
-4.Read the character whose last occurrence needs to be found
-5.Use the lastIndexOf() function on the string to get the index of the last occurrence of the given character.
-6.If the returned index is not -1, print the index.
-```
-
-
-
+1.	Start the program.
+2.	Import the necessary package 'java.util'
+3.	Read the base value from the user.
+4. Read the exponent value from the user.
+5. Use the Math.pow(base, exponent) function to calculate the power.
+6. Display the result.
+7. Stop the program.
 
 ## PROGRAM:
  ```
 /*
 Program to implement a Strings and Math Function using Java
 Developed by: MUKESH KUMAR S
-RegisterNumber:  212223240099
+RegisterNumber: 212223240099
 */
 ```
 
+## SOURCE CODE:
+
 ```
 import java.util.*;
-public class Main{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        String input=sc.nextLine();
-        char ch = sc.next().charAt(0);
-        int index=input.lastIndexOf(ch);
-        if(index != -1){
-            System.out.println("Last occurrence of '"+ch+"' is at index: "+index);
-        }
 
+public class PowerCalculation {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double base = sc.nextDouble();
+        double exponent = sc.nextDouble();
+        double result = Math.pow(base, exponent);
+
+        System.out.println(base + " raised to the power of " + exponent + " is: " + result);
     }
 }
-```
 
+```
 
 
 
 
 
 ## OUTPUT:
-
-<img width="932" height="322" alt="image" src="https://github.com/user-attachments/assets/d558460a-e7b7-4dcc-8772-fd8d03dc91a4" />
+![Screenshot 2025-11-17 002442](https://github.com/ABINAYA-27-76/19AI307_ODD-25-26-/blob/48e3a0e8c1eaa81a22e732def7d6ac38d8c6d9ba/19AI307_JAVA(25-26)/Module-01/DAY-5/Screenshot%202025-11-17%20002442.png)
 
 
 ## RESULT:
+Thus, the Java program to calculate the power of a given number using Math function was successfully executed.
 
-Thus, the program to find the index of the last occurrence of a character in a string is executed successfully.
+
+
+
+
+
+
+
+
